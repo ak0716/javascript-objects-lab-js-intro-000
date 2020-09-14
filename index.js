@@ -5,4 +5,3 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 }
 
 updateObjectWithKeyAndValue(taplist, 'Pilsner', 'Wayfinder')
-
