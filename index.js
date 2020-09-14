@@ -26,7 +26,7 @@ deleteFromObjectByKey(newTaplist, 'IPA')
 
 
 function destructivelyDeleteFromObjectByKey(obj, key) {
-  return Object.assign(obj, {[key]})
+  return Object.assign(obj, {key})
 }
 
 destructivelyDeleteFromObjectByKey(taplist, 'IPA')
