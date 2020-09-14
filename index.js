@@ -1,4 +1,5 @@
 var taplist = {'IPA' : 'Ex Novo'}
+var newTaplist = Object.assign({}, taplist)
 
 function updateObjectWithKeyAndValue(obj, key, value) {
   return Object.assign({}, obj, {[key] : value})
@@ -15,10 +16,8 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
 destructivelyUpdateObjectWithKeyAndValue(taplist, 'Stout', 'Prairie')
 console.log(taplist)
 
-var newTaplist
 
 function deleteFromObjectByKey(obj, key) {
-  newTaplist = Object.assign({}, obj)
   delete newTaplist.key
   return newTaplist
 }
