@@ -18,8 +18,8 @@ console.log(taplist)
 
 
 function deleteFromObjectByKey(obj, key) {
-  delete obj.key
-  return obj
+  delete taplist.key
+  return taplist
 }
 
 deleteFromObjectByKey(newTaplist, 'IPA')
