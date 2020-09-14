@@ -16,7 +16,9 @@ destructivelyUpdateObjectWithKeyAndValue(taplist, 'Stout', 'Prairie')
 console.log(taplist)
 
 function deleteFromObjectByKey(obj, key) {
-  delete obj.key
+  var newTaplist = Object.assign{{}, obj}
+  delete newTaplist.key
+  return newTaplist
 }
 
 deleteFromObjectByKey(taplist, 'IPA')
