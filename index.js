@@ -14,3 +14,10 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
 
 destructivelyUpdateObjectWithKeyAndValue(taplist, 'Stout', 'Prairie')
 console.log(taplist)
+
+function deleteFromObjectByKey(obj, key) {
+  delete obj.key
+  return obj;
+}
+
+deleteFromObjectByKey(taplist, 'IPA')
