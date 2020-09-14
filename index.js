@@ -26,7 +26,7 @@ deleteFromObjectByKey(newTaplist, 'IPA')
 
 
 function destructivelyDeleteFromObjectByKey(obj, key) {
-
+  var taplist = {'IPA' : 'Ex Novo'}
   delete taplist[key]
   return taplist
 }
