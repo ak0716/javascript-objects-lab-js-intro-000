@@ -23,3 +23,11 @@ function deleteFromObjectByKey(obj, key) {
 }
 
 deleteFromObjectByKey(newTaplist, 'IPA')
+
+
+function destructivelyDeleteFromObjectByKey(obj, key) {
+  delete taplist.key
+  return taplist
+}
+
+destructivelyDeleteFromObjectByKey(taplist, 'IPA')
